@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <meta name="generator" content="Astro v5.6.1" />
+    <title>HGB Group</title>
+    <link rel="stylesheet" href="./index.DkGwR1Lr.css" />
+  </head>
+  <body>
+    <nav
+      id="navbar"
+      class="fixed top-0 inset-x-0 z-50 h-20 navbar-height bg-transparent text-white transition-colors duration-300"
+    >
+      <div
+        class="container mx-auto flex items-center justify-between p-4 h-full"
+      >
+        <a href="/">
+          <img
+            id="logo"
+            src="./img/hgb_logo.DCf0DNQP.svg"
+            alt="Logo HGB"
+            class="h-10 md:h-12 hover:h-14 drop-shadow-md filter invert transition-all duration-300"
+          />
+        </a>
+        <!-- Botón para menú móvil -->
+        <button
+          id="menu-toggle"
+          class="relative block lg:hidden w-8 h-8 focus:outline-none"
+        >
+          <img
+            id="icon-open"
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='128'%20height='128'%20viewBox='0%200%2024%2024'%3e%3cpath%20fill='currentColor'%20d='M21%2018H3v-2h18v2Zm0-5H3v-2h18v2Zm0-5H3V6h18v2Z'/%3e%3c/svg%3e"
+            alt="Abrir menú"
+            class="w-full h-full transition-opacity duration-300"
+          />
+          <img
+            id="icon-close"
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='128'%20height='128'%20viewBox='0%200%2015%2015'%3e%3cpath%20fill='currentColor'%20d='M3.64%202.27L7.5%206.13l3.84-3.84A.92.92%200%200%201%2012%202a1%201%200%200%201%201%201a.9.9%200%200%201-.27.66L8.84%207.5l3.89%203.89A.9.9%200%200%201%2013%2012a1%201%200%200%201-1%201a.92.92%200%200%201-.69-.27L7.5%208.87l-3.85%203.85A.92.92%200%200%201%203%2013a1%201%200%200%201-1-1a.9.9%200%200%201%20.27-.66L6.16%207.5L2.27%203.61A.9.9%200%200%201%202%203a1%201%200%200%201%201-1c.24.003.47.1.64.27'/%3e%3c/svg%3e"
+            alt="Cerrar menú"
+            class="w-full h-full transition-opacity duration-300 opacity-0 absolute inset-0"
+          />
+        </button>
+        <!-- Menú para pantallas lg+ -->
+        <ul class="hidden lg:flex space-x-6 md:text-lg lg:text-xl">
+          <li>
+            <a
+              href="#nosotros"
+              class="inline-block hover:text-[var(--color-accent-500)] font-bold hover:scale-105 transform transition-transform duration-300"
+            >
+              Nosotros
+            </a>
+          </li>
+          <li>
+            <a
+              href="#proyectos"
+              class="inline-block hover:text-[var(--color-accent-500)] font-bold hover:scale-105 transform transition-transform duration-300"
+            >
+              Proyectos destacados
+            </a>
+          </li>
+          <li>
+            <a
+              href="#servicios"
+              class="inline-block hover:text-[var(--color-accent-500)] font-bold hover:scale-105 transform transition-transform duration-300"
+            >
+              Servicios
+            </a>
+          </li>
+          <li>
+            <a
+              href="#mision-vision"
+              class="inline-block hover:text-[var(--color-accent-500)] font-bold hover:scale-105 transform transition-transform duration-300"
+            >
+              Misión y Visión
+            </a>
+          </li>
+          <li>
+            <a
+              href="#ubicacion"
+              class="inline-block hover:text-[var(--color-accent-500)] font-bold hover:scale-105 transform transition-transform duration-300"
+            >
+              Ubicación
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Overlay menú móvil full‑screen -->
+      <div
+        id="mobile-menu"
+        class="lg:hidden fixed inset-x-0 top-[4rem] hidden bg-[var(--color-background-50)] z-50"
+      >
+        <ul class="flex flex-col justify-evenly h-[calc(100vh-4rem)]">
+          <li class="w-full">
+            <a
+              href="#nosotros"
+              class="block text-2xl text-center p-4 hover:text-[var(--color-accent-500)] font-bold hover:scale-105 transform transition-transform duration-300"
+            >
+              Nosotros
+            </a>
+          </li>
+          <li class="w-full">
+            <a
+              href="#proyectos"
+              class="block text-2xl text-center p-4 hover:text-[var(--color-accent-500)] font-bold hover:scale-105 transform transition-transform duration-300"
+            >
+              Proyectos destacados
+            </a>
+          </li>
+          <li class="w-full">
+            <a
+              href="#servicios"
+              class="block text-2xl text-center p-4 hover:text-[var(--color-accent-500)] font-bold hover:scale-105 transform transition-transform duration-300"
+            >
+              Servicios
+            </a>
+          </li>
+          <li class="w-full">
+            <a
+              href="#mision-vision"
+              class="block text-2xl text-center p-4 hover:text-[var(--color-accent-500)] font-bold hover:scale-105 transform transition-transform duration-300"
+            >
+              Misión y Visión
+            </a>
+          </li>
+          <li class="w-full">
+            <a
+              href="#ubicacion"
+              class="block text-2xl text-center p-4 hover:text-[var(--color-accent-500)] font-bold hover:scale-105 transform transition-transform duration-300"
+            >
+              Ubicación
+            </a>
+          </li>
+        </ul>
+      </div>
+      <script type="module">
+        document.addEventListener("DOMContentLoaded", () => {
+          const navbar = document.getElementById("navbar");
+          const logo = document.getElementById("logo");
+          const links = navbar.querySelectorAll("ul li a");
+          const menuToggle = document.getElementById("menu-toggle");
+          const mobileMenu = document.getElementById("mobile-menu");
+          const iconOpen = document.getElementById("icon-open");
+          const iconClose = document.getElementById("icon-close");
+          const trigger = document.getElementById("nosotros");
+          const offset = trigger.offsetTop - navbar.offsetHeight;
+
+          // Toggle mobile icons
+          menuToggle.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+            iconOpen.classList.toggle("opacity-0");
+            iconClose.classList.toggle("opacity-0");
+          });
+
+          function onScroll() {
+            if (window.innerWidth < 1024) {
+              navbar.classList.remove("bg-transparent");
+              navbar.classList.add(
+                "bg-[var(--color-background-50)]",
+                "text-[var(--color-text-900)]",
+                "shadow"
+              );
+              logo.classList.remove("invert");
+              links.forEach((a) => {
+                a.classList.remove("text-white");
+                a.classList.add("text-[var(--color-text-900)]");
+              });
+            } else {
+              if (window.scrollY >= offset) {
+                navbar.classList.remove("bg-transparent");
+                navbar.classList.add(
+                  "bg-[var(--color-background-50)]",
+                  "text-[var(--color-text-900)]",
+                  "shadow"
+                );
+                logo.classList.remove("invert");
+                links.forEach((a) => {
+                  a.classList.remove("text-white");
+                  a.classList.add("text-[var(--color-text-900)]");
+                });
+              } else {
+                navbar.classList.add("bg-transparent", "text-white");
+                navbar.classList.remove(
+                  "bg-[var(--color-background-50)]",
+                  "text-[var(--color-text-900)]",
+                  "shadow"
+                );
+                logo.classList.add("invert");
+                links.forEach((a) => {
+                  a.classList.remove("text-[var(--color-text-900)]");
+                  a.classList.add("text-white");
+                });
+              }
+            }
+          }
+
+          onScroll();
+          window.addEventListener("scroll", onScroll);
+        });
+      </script>
+    </nav>
+    <section
+      class="w-full h-screen bg-cover bg-center top-20 flex flex-col items-start justify-start text-left text-white"
+      style="background-image: url(./img/animated_baner.DPcYCA9o.gif)"
+      data-astro-cid-vdits326
+    >
+      <div
+        class="flex flex-col items-center justify-center h-full dynamic-margins"
+        data-astro-cid-vdits326
+      >
+        <img
+          src="./img/hgb_hero_white_logo.CI_S5A7n_Z1QYTO7.webp"
+          alt="Logo de la empresa"
+          loading="lazy"
+          data-astro-cid-vdits326="true"
+          width="683"
+          height="187"
+          decoding="async"
+          class="logo mb-4 drop-shadow-[0_0_5px_rgba(0,0,0,0.8)]"
+        />
+        <h1 class="heading font-bold text-center" data-astro-cid-vdits326>
+          Soluciones eléctricas y de iluminación
+        </h1>
+        <p class="paragraph mt-2 text-center" data-astro-cid-vdits326>
+          Expertos en Equipos y proyectos Eléctricos en México y Centroamérica
+        </p>
+      </div>
+    </section>
+    <section
+      id="nosotros"
+      class="relative py-12 px-4 bg-[var(--color-background-50)] overflow-hidden"
+      data-astro-cid-eiamszqp
+    >
+      <div class="container mx-auto" data-astro-cid-eiamszqp>
+        <h2
+          class="about-title font-bold text-[var(--color-text-900)] mb-6 text-center"
+          data-astro-cid-eiamszqp
+        >
+          Nosotros
+        </h2>
+        <div class="relative" data-astro-cid-eiamszqp>
+          <!-- Slides wrapper con padding-bottom -->
+          <div
+            id="about-carousel"
+            class="flex transition-transform duration-500 pb-8"
+            data-astro-cid-eiamszqp
+          >
+            <!-- Slide 1: ¿Quiénes somos? -->
+            <div class="slide flex-none w-full p-4" data-astro-cid-eiamszqp>
+              <div
+                class="p-8 bg-white shadow rounded-[5px] flex flex-col md:flex-row items-center md:gap-8 md:h-[450px]"
+                data-astro-cid-eiamszqp
+              >
+                <!-- Texto centrado verticalmente -->
+                <div
+                  class="md:w-1/2 flex flex-col justify-center"
+                  data-astro-cid-eiamszqp
+                >
+                  <h3
+                    class="about-subtitle font-semibold text-[var(--color-primary-500)] mb-2"
+                    data-astro-cid-eiamszqp
+                  >
+                    ¿Quiénes somos?
+                  </h3>
+                  <p
+                    class="about-text text-[var(--color-text-700)]"
+                    data-astro-cid-eiamszqp
+                  >
+                    HGB Group está conformado por siete empresas que ofrecen
+                    soluciones eléctricas e iluminación. Operamos con marcas de
+                    distribución directa, garantizando soporte técnico eficiente
+                    y personalizado a nuestros clientes.
+                  </p>
+                </div>
+                <!-- Imagen en contenedor full‑height y centrada -->
+                <div
+                  class="md:w-1/2 mt-4 md:mt-0 flex items-center justify-center h-full"
+                  data-astro-cid-eiamszqp
+                >
+                  <div
+                    class="w-full max-w-[350px] h-full"
+                    data-astro-cid-eiamszqp
+                  >
+                    <img
+                      src="./img/hgb_hero_logo.CEj2PDWA_1waBwe.webp"
+                      alt="¿Quiénes somos?"
+                      data-astro-cid-eiamszqp="true"
+                      width="8000"
+                      height="8000"
+                      loading="lazy"
+                      decoding="async"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2: Miembros -->
+            <div class="slide flex-none w-full p-4" data-astro-cid-eiamszqp>
+              <div
+                class="p-8 bg-white shadow rounded flex flex-col items-center md:h-[450px]"
+                data-astro-cid-eiamszqp
+              >
+                <h3
+                  class="about-subtitle font-semibold text-[var(--color-primary-500)] mb-4 text-center"
+                  data-astro-cid-eiamszqp
+                >
+                  Miembros
+                </h3>
+                <!-- Mobile -->
+                <div class="md:hidden space-y-4 w-full" data-astro-cid-eiamszqp>
+                  <div class="grid grid-cols-2 gap-4" data-astro-cid-eiamszqp>
+                    <div
+                      class="h-24 flex items-center justify-center p-2 bg-gray-50 rounded-[5px] shadow"
+                      data-astro-cid-eiamszqp
+                    >
+                      <img
+                        src="./img/breaker_electric.DNyhwvl4_ZuLrwY.webp"
+                        alt="Miembro 1"
+                        data-astro-cid-eiamszqp="true"
+                        width="2267"
+                        height="557"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div
+                      class="h-24 flex items-center justify-center p-2 bg-gray-50 rounded-[5px] shadow"
+                      data-astro-cid-eiamszqp
+                    >
+                      <img
+                        src="./img/fuse_store.CZEs4Vn__Z1bkzbL.webp"
+                        alt="Miembro 2"
+                        data-astro-cid-eiamszqp="true"
+                        width="15972"
+                        height="3643"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div
+                      class="h-24 flex items-center justify-center p-2 bg-gray-50 rounded-[5px] shadow"
+                      data-astro-cid-eiamszqp
+                    >
+                      <img
+                        src="./img/gateway.BAwPgkAY_ZNdjs9.webp"
+                        alt="Miembro 3"
+                        data-astro-cid-eiamszqp="true"
+                        width="5012"
+                        height="1626"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div
+                      class="h-24 flex items-center justify-center p-2 bg-gray-50 rounded-[5px] shadow"
+                      data-astro-cid-eiamszqp
+                    >
+                      <img
+                        src="./img/abv.DXosfvNt_Zn9Bzx.svg"
+                        alt="Miembro 4"
+                        data-astro-cid-eiamszqp="true"
+                        width="225"
+                        height="225"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div
+                      class="h-24 flex items-center justify-center p-2 bg-gray-50 rounded-[5px] shadow"
+                      data-astro-cid-eiamszqp
+                    >
+                      <img
+                        src="./img/light_n.CZGX6Ep0_Z2aQB1i.webp"
+                        alt="Miembro 5"
+                        data-astro-cid-eiamszqp="true"
+                        width="4267"
+                        height="3473"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div
+                      class="h-24 flex items-center justify-center p-2 bg-gray-50 rounded-[5px] shadow"
+                      data-astro-cid-eiamszqp
+                    >
+                      <img
+                        src="./img/odosa.DZtE2zQf_ZJ2xPx.webp"
+                        alt="Miembro 6"
+                        data-astro-cid-eiamszqp="true"
+                        width="182"
+                        height="182"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div
+                      class="h-24 flex items-center justify-center p-2 bg-gray-50 rounded-[5px] shadow col-span-2"
+                      data-astro-cid-eiamszqp
+                    >
+                      <img
+                        src="./img/surtidora.Di9L0Yiw_2pnhfY.webp"
+                        alt="Miembro 7"
+                        data-astro-cid-eiamszqp="true"
+                        width="4725"
+                        height="4726"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- Desktop -->
+                <div class="hidden md:block w-full" data-astro-cid-eiamszqp>
+                  <div
+                    class="flex flex-wrap justify-between gap-4"
+                    data-astro-cid-eiamszqp
+                  >
+                    <div
+                      class="flex-1 min-w-[30%] h-32 bg-gray-50 rounded-[5px] shadow p-4"
+                      data-astro-cid-eiamszqp
+                    >
+                      <img
+                        src="./img/breaker_electric.DNyhwvl4_ZuLrwY.webp"
+                        alt="Miembro 1"
+                        data-astro-cid-eiamszqp="true"
+                        width="2267"
+                        height="557"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div
+                      class="flex-1 min-w-[30%] h-32 bg-gray-50 rounded-[5px] shadow p-4"
+                      data-astro-cid-eiamszqp
+                    >
+                      <img
+                        src="./img/fuse_store.CZEs4Vn__Z1bkzbL.webp"
+                        alt="Miembro 2"
+                        data-astro-cid-eiamszqp="true"
+                        width="15972"
+                        height="3643"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div
+                      class="flex-1 min-w-[30%] h-32 bg-gray-50 rounded-[5px] shadow p-4"
+                      data-astro-cid-eiamszqp
+                    >
+                      <img
+                        src="./img/gateway.BAwPgkAY_ZNdjs9.webp"
+                        alt="Miembro 3"
+                        data-astro-cid-eiamszqp="true"
+                        width="5012"
+                        height="1626"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div
+                      class="flex-1 min-w-[22%] h-32 bg-gray-50 rounded-[5px] shadow p-4"
+                      data-astro-cid-eiamszqp
+                    >
+                      <img
+                        src="./img/abv.DXosfvNt_Zn9Bzx.svg"
+                        alt="Miembro 4"
+                        data-astro-cid-eiamszqp="true"
+                        width="225"
+                        height="225"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div
+                      class="flex-1 min-w-[22%] h-32 bg-gray-50 rounded-[5px] shadow p-4"
+                      data-astro-cid-eiamszqp
+                    >
+                      <img
+                        src="./img/light_n.CZGX6Ep0_Z2aQB1i.webp"
+                        alt="Miembro 5"
+                        data-astro-cid-eiamszqp="true"
+                        width="4267"
+                        height="3473"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div
+                      class="flex-1 min-w-[22%] h-32 bg-gray-50 rounded-[5px] shadow p-4"
+                      data-astro-cid-eiamszqp
+                    >
+                      <img
+                        src="./img/odosa.DZtE2zQf_ZJ2xPx.webp"
+                        alt="Miembro 6"
+                        data-astro-cid-eiamszqp="true"
+                        width="182"
+                        height="182"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div
+                      class="flex-1 min-w-[22%] h-32 bg-gray-50 rounded-[5px] shadow p-4"
+                      data-astro-cid-eiamszqp
+                    >
+                      <img
+                        src="./img/surtidora.Di9L0Yiw_2pnhfY.webp"
+                        alt="Miembro 7"
+                        data-astro-cid-eiamszqp="true"
+                        width="4725"
+                        height="4726"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3: Historia -->
+            <div class="slide flex-none w-full p-4" data-astro-cid-eiamszqp>
+              <div
+                class="p-8 bg-white shadow rounded-[5px] flex flex-col md:flex-row items-center md:h-[450px]"
+                data-astro-cid-eiamszqp
+              >
+                <div
+                  class="md:w-1/2 flex flex-col justify-center"
+                  data-astro-cid-eiamszqp
+                >
+                  <h3
+                    class="about-subtitle font-semibold text-[var(--color-primary-500)] mb-2"
+                    data-astro-cid-eiamszqp
+                  >
+                    Historia y experiencia
+                  </h3>
+                  <p
+                    class="about-text text-[var(--color-text-700)]"
+                    data-astro-cid-eiamszqp
+                  >
+                    Con 37 años en la industria eléctrica, HGB ha trabajado en
+                    sectores públicos y privados, incluyendo retail, industria,
+                    hospitales y más. Nuestra trayectoria respalda la calidad y
+                    confianza de nuestros servicios.
+                  </p>
+                </div>
+                <div
+                  class="md:w-1/2 mt-4 md:mt-0 flex items-center justify-center h-full"
+                  data-astro-cid-eiamszqp
+                >
+                  <div
+                    class="w-full max-w-[350px] h-full"
+                    data-astro-cid-eiamszqp
+                  >
+                    <img
+                      src="./img/historia_experiencia.fxxqGRG7_ZrFToB.webp"
+                      alt="Historia"
+                      data-astro-cid-eiamszqp="true"
+                      width="3060"
+                      height="2088"
+                      loading="lazy"
+                      decoding="async"
+                      class="w-full h-full object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Controles -->
+          <button
+            id="about-prev"
+            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-[var(--color-primary-500)] text-white p-2 rounded-full"
+            data-astro-cid-eiamszqp
+          >
+            &#9664;
+          </button>
+          <button
+            id="about-next"
+            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-[var(--color-primary-500)] text-white p-2 rounded-full"
+            data-astro-cid-eiamszqp
+          >
+            &#9654;
+          </button>
+          <!-- Indicadores -->
+          <div
+            id="about-indicators"
+            class="absolute bottom-14 md:bottom-16 left-1/2 transform -translate-x-1/2 flex space-x-2"
+            data-astro-cid-eiamszqp
+          ></div>
+        </div>
+      </div>
+    </section>
+    <script type="module">
+      const carousel = document.getElementById("about-carousel");
+      const slides = carousel.querySelectorAll(".slide");
+      const total = slides.length;
+      let current = 0;
+      const nextBtn = document.getElementById("about-next");
+      const prevBtn = document.getElementById("about-prev");
+      const indicators = document.getElementById("about-indicators");
+
+      slides.forEach((_, idx) => {
+        const dot = document.createElement("button");
+        dot.className =
+          "w-4 h-4 rounded-full bg-gray-300 transition-colors duration-300";
+        dot.dataset.index = idx;
+        dot.addEventListener("click", () => goTo(idx));
+        indicators.appendChild(dot);
+      });
+
+      function update() {
+        carousel.style.transform = `translateX(-${current * 100}%)`;
+        indicators.querySelectorAll("button").forEach((btn, idx) => {
+          if (idx === current) {
+            btn.classList.replace("bg-gray-300", "bg-primary-500");
+          } else {
+            btn.classList.replace("bg-primary-500", "bg-gray-300");
+          }
+        });
+      }
+
+      function goTo(idx) {
+        current = idx;
+        update();
+      }
+
+      nextBtn.addEventListener("click", () => goTo((current + 1) % total));
+      prevBtn.addEventListener("click", () =>
+        goTo((current - 1 + total) % total)
+      );
+
+      update();
+    </script>
+    <section
+      id="proyectos"
+      class="py-12 px-4 bg-[var(--color-background-50)] relative overflow-hidden"
+      data-astro-cid-lsjgadct
+    >
+      <div class="container mx-auto" data-astro-cid-lsjgadct>
+        <h2
+          class="font-bold text-[var(--color-text-900)] text-center mb-8"
+          style="font-size: clamp(2rem, 5vw, 3rem)"
+          data-astro-cid-lsjgadct
+        >
+          Proyectos Destacados
+        </h2>
+        <div class="relative" data-astro-cid-lsjgadct>
+          <!-- Slides wrapper con más padding-bottom -->
+          <div
+            id="projects-carousel"
+            class="flex transition-transform duration-500 pb-16"
+            data-astro-cid-lsjgadct
+          >
+            <div class="slide flex-none w-full p-4" data-astro-cid-lsjgadct>
+              <div
+                class="p-8 bg-white shadow rounded-[5px] flex flex-col md:flex-row h-full md:h-80 lg:h-[450px] w-full"
+                data-astro-cid-lsjgadct
+              >
+                <!-- Imagen ocupa la mitad en md+ y full-width en móvil -->
+                <div
+                  class="md:w-1/2 flex items-center justify-center h-full"
+                  data-astro-cid-lsjgadct
+                >
+                  <div class="w-full h-full" data-astro-cid-lsjgadct>
+                    <img
+                      src="./img/totalplay.VUeB47xi.jpeg"
+                      alt="Imagen del Proyecto Total Play"
+                      class="w-full h-full object-cover rounded-[5px] shadow-lg"
+                      data-astro-cid-lsjgadct
+                    />
+                  </div>
+                </div>
+                <!-- Texto centrado y con padding lateral en md+ -->
+                <div
+                  class="md:w-1/2 flex flex-col justify-center mt-6 md:mt-0 md:pl-6"
+                  data-astro-cid-lsjgadct
+                >
+                  <h3
+                    class="font-semibold text-[var(--color-primary-500)] mb-2"
+                    style="font-size: clamp(1.5rem, 4vw, 2rem)"
+                    data-astro-cid-lsjgadct
+                  >
+                    Total Play
+                  </h3>
+                  <p
+                    class="text-[var(--color-text-700)]"
+                    data-astro-cid-lsjgadct
+                  >
+                    Para Total Play, HGB Group a través de Breaker Electric
+                    suministró luminarias y brindó apoyo en estudios
+                    fotométricos, asegurando niveles lumínicos óptimos en sus
+                    instalaciones. Este proyecto resalta la importancia de la
+                    iluminación adecuada en la experiencia del cliente y el
+                    rendimiento operativo.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide flex-none w-full p-4" data-astro-cid-lsjgadct>
+              <div
+                class="p-8 bg-white shadow rounded-[5px] flex flex-col md:flex-row h-full md:h-80 lg:h-[450px] w-full"
+                data-astro-cid-lsjgadct
+              >
+                <!-- Imagen ocupa la mitad en md+ y full-width en móvil -->
+                <div
+                  class="md:w-1/2 flex items-center justify-center h-full"
+                  data-astro-cid-lsjgadct
+                >
+                  <div class="w-full h-full" data-astro-cid-lsjgadct>
+                    <img
+                      src="./img/amazon.BFmnsa0O.jpg"
+                      alt="Imagen del Proyecto Amazon"
+                      class="w-full h-full object-cover rounded-[5px] shadow-lg"
+                      data-astro-cid-lsjgadct
+                    />
+                  </div>
+                </div>
+                <!-- Texto centrado y con padding lateral en md+ -->
+                <div
+                  class="md:w-1/2 flex flex-col justify-center mt-6 md:mt-0 md:pl-6"
+                  data-astro-cid-lsjgadct
+                >
+                  <h3
+                    class="font-semibold text-[var(--color-primary-500)] mb-2"
+                    style="font-size: clamp(1.5rem, 4vw, 2rem)"
+                    data-astro-cid-lsjgadct
+                  >
+                    Amazon
+                  </h3>
+                  <p
+                    class="text-[var(--color-text-700)]"
+                    data-astro-cid-lsjgadct
+                  >
+                    En 2020, HGB Group, apoyó a Amazon en la Ciudad de México
+                    con el suministro de luminarias. Este proyecto demuestra
+                    nuestra capacidad de adaptar soluciones a las necesidades
+                    específicas de grandes empresas del sector retail.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide flex-none w-full p-4" data-astro-cid-lsjgadct>
+              <div
+                class="p-8 bg-white shadow rounded-[5px] flex flex-col md:flex-row h-full md:h-80 lg:h-[450px] w-full"
+                data-astro-cid-lsjgadct
+              >
+                <!-- Imagen ocupa la mitad en md+ y full-width en móvil -->
+                <div
+                  class="md:w-1/2 flex items-center justify-center h-full"
+                  data-astro-cid-lsjgadct
+                >
+                  <div class="w-full h-full" data-astro-cid-lsjgadct>
+                    <img
+                      src="./img/ikea.BMrSpfHm.jpeg"
+                      alt="Imagen del Proyecto IKEA"
+                      class="w-full h-full object-cover rounded-[5px] shadow-lg"
+                      data-astro-cid-lsjgadct
+                    />
+                  </div>
+                </div>
+                <!-- Texto centrado y con padding lateral en md+ -->
+                <div
+                  class="md:w-1/2 flex flex-col justify-center mt-6 md:mt-0 md:pl-6"
+                  data-astro-cid-lsjgadct
+                >
+                  <h3
+                    class="font-semibold text-[var(--color-primary-500)] mb-2"
+                    style="font-size: clamp(1.5rem, 4vw, 2rem)"
+                    data-astro-cid-lsjgadct
+                  >
+                    IKEA
+                  </h3>
+                  <p
+                    class="text-[var(--color-text-700)]"
+                    data-astro-cid-lsjgadct
+                  >
+                    HGB Group, apoyó a IKEA en la Ciudad de México y Guadalajara
+                    con el suministro de tableros de distribución y control.
+                    Este proyecto refleja nuestra experiencia en ofrecer
+                    soluciones personalizadas para empresas líderes del sector
+                    retail.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide flex-none w-full p-4" data-astro-cid-lsjgadct>
+              <div
+                class="p-8 bg-white shadow rounded-[5px] flex flex-col md:flex-row h-full md:h-80 lg:h-[450px] w-full"
+                data-astro-cid-lsjgadct
+              >
+                <!-- Imagen ocupa la mitad en md+ y full-width en móvil -->
+                <div
+                  class="md:w-1/2 flex items-center justify-center h-full"
+                  data-astro-cid-lsjgadct
+                >
+                  <div class="w-full h-full" data-astro-cid-lsjgadct>
+                    <img
+                      src="./img/prodemex.C6VKfH4s.jpeg"
+                      alt="Imagen del Proyecto PRODEMEX"
+                      class="w-full h-full object-cover rounded-[5px] shadow-lg"
+                      data-astro-cid-lsjgadct
+                    />
+                  </div>
+                </div>
+                <!-- Texto centrado y con padding lateral en md+ -->
+                <div
+                  class="md:w-1/2 flex flex-col justify-center mt-6 md:mt-0 md:pl-6"
+                  data-astro-cid-lsjgadct
+                >
+                  <h3
+                    class="font-semibold text-[var(--color-primary-500)] mb-2"
+                    style="font-size: clamp(1.5rem, 4vw, 2rem)"
+                    data-astro-cid-lsjgadct
+                  >
+                    PRODEMEX
+                  </h3>
+                  <p
+                    class="text-[var(--color-text-700)]"
+                    data-astro-cid-lsjgadct
+                  >
+                    En 2020, HGB Group, suministró cables para la conexión de
+                    equipo y control a PRODEMEX. Este proyecto demuestra nuestra
+                    capacidad para ofrecer soluciones eficientes y
+                    personalizadas para el sector industrial.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide flex-none w-full p-4" data-astro-cid-lsjgadct>
+              <div
+                class="p-8 bg-white shadow rounded-[5px] flex flex-col md:flex-row h-full md:h-80 lg:h-[450px] w-full"
+                data-astro-cid-lsjgadct
+              >
+                <!-- Imagen ocupa la mitad en md+ y full-width en móvil -->
+                <div
+                  class="md:w-1/2 flex items-center justify-center h-full"
+                  data-astro-cid-lsjgadct
+                >
+                  <div class="w-full h-full" data-astro-cid-lsjgadct>
+                    <img
+                      src="./img/johnsonjohnson.UE5Y5JBJ.jpg"
+                      alt="Imagen del Proyecto Johnson &amp; Johnson"
+                      class="w-full h-full object-cover rounded-[5px] shadow-lg"
+                      data-astro-cid-lsjgadct
+                    />
+                  </div>
+                </div>
+                <!-- Texto centrado y con padding lateral en md+ -->
+                <div
+                  class="md:w-1/2 flex flex-col justify-center mt-6 md:mt-0 md:pl-6"
+                  data-astro-cid-lsjgadct
+                >
+                  <h3
+                    class="font-semibold text-[var(--color-primary-500)] mb-2"
+                    style="font-size: clamp(1.5rem, 4vw, 2rem)"
+                    data-astro-cid-lsjgadct
+                  >
+                    Johnson &amp; Johnson
+                  </h3>
+                  <p
+                    class="text-[var(--color-text-700)]"
+                    data-astro-cid-lsjgadct
+                  >
+                    HGB Group, apoyó a Johnson &amp; Johnson con el suministro
+                    de luminarias y la ejecución de estudios fotométricos para
+                    garantizar los niveles lumínicos óptimos. Este proyecto
+                    refleja nuestra habilidad para gestionar proyectos de
+                    iluminación a gran escala con precisión.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide flex-none w-full p-4" data-astro-cid-lsjgadct>
+              <div
+                class="p-8 bg-white shadow rounded-[5px] flex flex-col md:flex-row h-full md:h-80 lg:h-[450px] w-full"
+                data-astro-cid-lsjgadct
+              >
+                <!-- Imagen ocupa la mitad en md+ y full-width en móvil -->
+                <div
+                  class="md:w-1/2 flex items-center justify-center h-full"
+                  data-astro-cid-lsjgadct
+                >
+                  <div class="w-full h-full" data-astro-cid-lsjgadct>
+                    <img
+                      src="./img/hospitalbanderas.BLoFLoTU.jpeg"
+                      alt="Imagen del Proyecto Hospital General, Bahía de Banderas"
+                      class="w-full h-full object-cover rounded-[5px] shadow-lg"
+                      data-astro-cid-lsjgadct
+                    />
+                  </div>
+                </div>
+                <!-- Texto centrado y con padding lateral en md+ -->
+                <div
+                  class="md:w-1/2 flex flex-col justify-center mt-6 md:mt-0 md:pl-6"
+                  data-astro-cid-lsjgadct
+                >
+                  <h3
+                    class="font-semibold text-[var(--color-primary-500)] mb-2"
+                    style="font-size: clamp(1.5rem, 4vw, 2rem)"
+                    data-astro-cid-lsjgadct
+                  >
+                    Hospital General, Bahía de Banderas
+                  </h3>
+                  <p
+                    class="text-[var(--color-text-700)]"
+                    data-astro-cid-lsjgadct
+                  >
+                    HGB Group suministró materiales y equipo eléctrico para la
+                    construcción del Hospital General en Nayarit, garantizando
+                    una infraestructura segura y confiable. Este proyecto
+                    subraya nuestro compromiso con la salud pública y el
+                    bienestar social.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide flex-none w-full p-4" data-astro-cid-lsjgadct>
+              <div
+                class="p-8 bg-white shadow rounded-[5px] flex flex-col md:flex-row h-full md:h-80 lg:h-[450px] w-full"
+                data-astro-cid-lsjgadct
+              >
+                <!-- Imagen ocupa la mitad en md+ y full-width en móvil -->
+                <div
+                  class="md:w-1/2 flex items-center justify-center h-full"
+                  data-astro-cid-lsjgadct
+                >
+                  <div class="w-full h-full" data-astro-cid-lsjgadct>
+                    <img
+                      src="./img/hospitalaguascalientes.BKwJzQsy.jpeg"
+                      alt="Imagen del Proyecto Hospital General de Zona IMSS Aguascalientes"
+                      class="w-full h-full object-cover rounded-[5px] shadow-lg"
+                      data-astro-cid-lsjgadct
+                    />
+                  </div>
+                </div>
+                <!-- Texto centrado y con padding lateral en md+ -->
+                <div
+                  class="md:w-1/2 flex flex-col justify-center mt-6 md:mt-0 md:pl-6"
+                  data-astro-cid-lsjgadct
+                >
+                  <h3
+                    class="font-semibold text-[var(--color-primary-500)] mb-2"
+                    style="font-size: clamp(1.5rem, 4vw, 2rem)"
+                    data-astro-cid-lsjgadct
+                  >
+                    Hospital General de Zona IMSS Aguascalientes
+                  </h3>
+                  <p
+                    class="text-[var(--color-text-700)]"
+                    data-astro-cid-lsjgadct
+                  >
+                    HGB Group apoyó al Hospital General de Zona del IMSS en
+                    Aguascalientes mediante el suministro de equipo eléctrico e
+                    iluminación. Este trabajo demuestra nuestra experiencia en
+                    ofrecer soluciones confiables para proyectos clave en el
+                    sector salud.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide flex-none w-full p-4" data-astro-cid-lsjgadct>
+              <div
+                class="p-8 bg-white shadow rounded-[5px] flex flex-col md:flex-row h-full md:h-80 lg:h-[450px] w-full"
+                data-astro-cid-lsjgadct
+              >
+                <!-- Imagen ocupa la mitad en md+ y full-width en móvil -->
+                <div
+                  class="md:w-1/2 flex items-center justify-center h-full"
+                  data-astro-cid-lsjgadct
+                >
+                  <div class="w-full h-full" data-astro-cid-lsjgadct>
+                    <img
+                      src="./img/chedraui.B106xd68.jpg"
+                      alt="Imagen del Proyecto CHEDRAUI"
+                      class="w-full h-full object-cover rounded-[5px] shadow-lg"
+                      data-astro-cid-lsjgadct
+                    />
+                  </div>
+                </div>
+                <!-- Texto centrado y con padding lateral en md+ -->
+                <div
+                  class="md:w-1/2 flex flex-col justify-center mt-6 md:mt-0 md:pl-6"
+                  data-astro-cid-lsjgadct
+                >
+                  <h3
+                    class="font-semibold text-[var(--color-primary-500)] mb-2"
+                    style="font-size: clamp(1.5rem, 4vw, 2rem)"
+                    data-astro-cid-lsjgadct
+                  >
+                    CHEDRAUI
+                  </h3>
+                  <p
+                    class="text-[var(--color-text-700)]"
+                    data-astro-cid-lsjgadct
+                  >
+                    Chedraui confió en HGB Group, para el suministro de equipo
+                    eléctrico en sus nuevos proyectos ubicados en Cozumel,
+                    Puerto Morelos y Playa del Carmen. Este proyecto reafirma
+                    nuestro compromiso con la excelencia y el servicio.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide flex-none w-full p-4" data-astro-cid-lsjgadct>
+              <div
+                class="p-8 bg-white shadow rounded-[5px] flex flex-col md:flex-row h-full md:h-80 lg:h-[450px] w-full"
+                data-astro-cid-lsjgadct
+              >
+                <!-- Imagen ocupa la mitad en md+ y full-width en móvil -->
+                <div
+                  class="md:w-1/2 flex items-center justify-center h-full"
+                  data-astro-cid-lsjgadct
+                >
+                  <div class="w-full h-full" data-astro-cid-lsjgadct>
+                    <img
+                      src="./img/equinix.DNRXtYVq.jpg"
+                      alt="Imagen del Proyecto Equinix"
+                      class="w-full h-full object-cover rounded-[5px] shadow-lg"
+                      data-astro-cid-lsjgadct
+                    />
+                  </div>
+                </div>
+                <!-- Texto centrado y con padding lateral en md+ -->
+                <div
+                  class="md:w-1/2 flex flex-col justify-center mt-6 md:mt-0 md:pl-6"
+                  data-astro-cid-lsjgadct
+                >
+                  <h3
+                    class="font-semibold text-[var(--color-primary-500)] mb-2"
+                    style="font-size: clamp(1.5rem, 4vw, 2rem)"
+                    data-astro-cid-lsjgadct
+                  >
+                    Equinix
+                  </h3>
+                  <p
+                    class="text-[var(--color-text-700)]"
+                    data-astro-cid-lsjgadct
+                  >
+                    HGB Group, suministró equipo eléctrico e iluminación a
+                    Equinix. Este proyecto demuestra nuestra experiencia en
+                    ofrecer soluciones especializadas para empresas líderes en
+                    infraestructura tecnológica.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide flex-none w-full p-4" data-astro-cid-lsjgadct>
+              <div
+                class="p-8 bg-white shadow rounded-[5px] flex flex-col md:flex-row h-full md:h-80 lg:h-[450px] w-full"
+                data-astro-cid-lsjgadct
+              >
+                <!-- Imagen ocupa la mitad en md+ y full-width en móvil -->
+                <div
+                  class="md:w-1/2 flex items-center justify-center h-full"
+                  data-astro-cid-lsjgadct
+                >
+                  <div class="w-full h-full" data-astro-cid-lsjgadct>
+                    <img
+                      src="./img/maxitunelacapulco.CjCvCVLf.jpeg"
+                      alt="Imagen del Proyecto Maxitunel Acapulco"
+                      class="w-full h-full object-cover rounded-[5px] shadow-lg"
+                      data-astro-cid-lsjgadct
+                    />
+                  </div>
+                </div>
+                <!-- Texto centrado y con padding lateral en md+ -->
+                <div
+                  class="md:w-1/2 flex flex-col justify-center mt-6 md:mt-0 md:pl-6"
+                  data-astro-cid-lsjgadct
+                >
+                  <h3
+                    class="font-semibold text-[var(--color-primary-500)] mb-2"
+                    style="font-size: clamp(1.5rem, 4vw, 2rem)"
+                    data-astro-cid-lsjgadct
+                  >
+                    Maxitunel Acapulco
+                  </h3>
+                  <p
+                    class="text-[var(--color-text-700)]"
+                    data-astro-cid-lsjgadct
+                  >
+                    En el Maxitunel de Acapulco, HGB Group se encargó del
+                    suministro de equipo eléctrico e iluminación, reafirmando
+                    nuestro compromiso con la calidad en proyectos de
+                    infraestructura clave.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Controles -->
+          <button
+            id="projects-prev"
+            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-[var(--color-primary-500)] text-white p-2 rounded-full"
+            data-astro-cid-lsjgadct
+          >
+            &#9664;
+          </button>
+          <button
+            id="projects-next"
+            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-[var(--color-primary-500)] text-white p-2 rounded-full"
+            data-astro-cid-lsjgadct
+          >
+            &#9654;
+          </button>
+          <!-- Indicadores con espacio suficiente debajo -->
+          <div
+            id="projects-indicators"
+            class="absolute bottom-0 lg:bottom-22 left-1/2 transform -translate-x-1/2 flex space-x-2"
+            data-astro-cid-lsjgadct
+          ></div>
+        </div>
+      </div>
+    </section>
+    <script type="module">
+      const carousel = document.getElementById("projects-carousel");
+      const slides = carousel.querySelectorAll(".slide");
+      const total = slides.length;
+      let current = 0;
+      const nextBtn = document.getElementById("projects-next");
+      const prevBtn = document.getElementById("projects-prev");
+      const indicators = document.getElementById("projects-indicators");
+
+      // Crear dots más grandes
+      slides.forEach((_, idx) => {
+        const dot = document.createElement("button");
+        dot.className =
+          "w-4 h-4 rounded-full bg-gray-300 transition-colors duration-300";
+        dot.dataset.index = idx;
+        dot.addEventListener("click", () => goTo(idx));
+        indicators.appendChild(dot);
+      });
+
+      function update() {
+        carousel.style.transform = `translateX(-${current * 100}%)`;
+        indicators.querySelectorAll("button").forEach((btn, idx) => {
+          btn.classList.toggle("bg-primary-500", idx === current);
+          btn.classList.toggle("bg-gray-300", idx !== current);
+        });
+      }
+
+      function goTo(idx) {
+        current = idx;
+        update();
+      }
+
+      nextBtn.addEventListener("click", () => goTo((current + 1) % total));
+      prevBtn.addEventListener("click", () =>
+        goTo((current - 1 + total) % total)
+      );
+
+      update();
+    </script>
+    <section
+      id="servicios"
+      class="relative py-12 px-4 bg-[var(--color-background-50)]"
+      data-astro-cid-g5jplrhu
+    >
+      <div class="container mx-auto" data-astro-cid-g5jplrhu>
+        <h2
+          class="services-title font-bold text-[var(--color-text-900)] mb-6 text-center"
+          data-astro-cid-g5jplrhu
+        >
+          Servicios
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          data-astro-cid-g5jplrhu
+        >
+          <!-- Card: Soluciones Eléctricas -->
+          <div class="bg-white shadow rounded p-4" data-astro-cid-g5jplrhu>
+            <img
+              src="./img/soluciones.B5OvzWGy_18X6Wj.webp"
+              alt="Soluciones eléctricas"
+              data-astro-cid-g5jplrhu="true"
+              width="740"
+              height="493"
+              loading="lazy"
+              decoding="async"
+              class="w-full h-64 object-cover rounded shadow mb-4"
+            />
+            <h3
+              class="service-subtitle font-semibold text-[var(--color-primary-500)] mb-2"
+              data-astro-cid-g5jplrhu
+            >
+              Soluciones Eléctricas
+            </h3>
+            <p class="text-[var(--color-text-700)]" data-astro-cid-g5jplrhu>
+              Ofrecemos productos como tableros de distribución, arranques y
+              bancos de capacitores, asegurando la electrificación segura y
+              eficiente de cualquier espacio. Cada solución está diseñada para
+              optimizar el rendimiento eléctrico y cumplir con normativas
+              específicas.
+            </p>
+          </div>
+          <!-- Card: Servicios de electrificación -->
+          <div class="bg-white shadow rounded p-4" data-astro-cid-g5jplrhu>
+            <img
+              src="./img/servicios.D1wa3Ggv_1QKlcD.webp"
+              alt="Servicios de electrificación"
+              data-astro-cid-g5jplrhu="true"
+              width="1902"
+              height="747"
+              loading="lazy"
+              decoding="async"
+              class="w-full h-64 object-cover rounded shadow mb-4"
+            />
+            <h3
+              class="service-subtitle font-semibold text-[var(--color-primary-500)] mb-2"
+              data-astro-cid-g5jplrhu
+            >
+              Servicios de electrificación
+            </h3>
+            <p class="text-[var(--color-text-700)]" data-astro-cid-g5jplrhu>
+              Proporcionamos servicios desde la generación hasta la distribución
+              terminal, abarcando proyectos de electrificación en sectores
+              públicos y privados. Cada solución es personalizada para asegurar
+              un suministro eléctrico inteligente y sostenible.
+            </p>
+          </div>
+          <!-- Card: Aplicaciones de iluminación -->
+          <div class="bg-white shadow rounded p-4" data-astro-cid-g5jplrhu>
+            <img
+              src="./img/aplicaciones.CZqXLFXU_Z1b19jP.webp"
+              alt="Aplicaciones de iluminación"
+              data-astro-cid-g5jplrhu="true"
+              width="1440"
+              height="810"
+              loading="lazy"
+              decoding="async"
+              class="w-full h-64 object-cover rounded shadow mb-4"
+            />
+            <h3
+              class="service-subtitle font-semibold text-[var(--color-primary-500)] mb-2"
+              data-astro-cid-g5jplrhu
+            >
+              Aplicaciones de iluminación
+            </h3>
+            <p class="text-[var(--color-text-700)]" data-astro-cid-g5jplrhu>
+              Desde la iluminación de oficinas hasta áreas exteriores, ofrecemos
+              soluciones integrales que combinan diseño y funcionalidad.
+              Nuestros sistemas garantizan el confort visual y el ahorro
+              energético, adaptándose a diversos entornos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="mision-vision"
+      class="py-12 px-4 bg-[var(--color-background-50)]"
+      data-astro-cid-yguxo3ys
+    >
+      <div class="container mx-auto" data-astro-cid-yguxo3ys>
+        <h2
+          class="text-center text-3xl font-bold mb-8 text-[var(--color-text-900)]"
+          data-astro-cid-yguxo3ys
+        >
+          Misión y Visión
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8"
+          data-astro-cid-yguxo3ys
+        >
+          <!-- Misión -->
+          <div
+            class="p-8 md:p-10 lg:p-12 bg-white shadow rounded-[5px] border border-gray-200"
+            data-astro-cid-yguxo3ys
+          >
+            <h3
+              class="text-2xl md:text-3xl font-semibold mb-4 text-[var(--color-primary-500)]"
+              data-astro-cid-yguxo3ys
+            >
+              Misión
+            </h3>
+            <p
+              class="text-lg md:text-xl text-[var(--color-text-700)]"
+              data-astro-cid-yguxo3ys
+            >
+              Así mismo, HGB Group tiene como objetivo cuidar y proponer medidas
+              en el cuidado del medio ambiente, así como fortalecer el
+              crecimiento de la empresa y el desarrollo profesional de sus
+              empleados.
+            </p>
+          </div>
+          <!-- Visión -->
+          <div
+            class="p-8 md:p-10 lg:p-12 bg-white shadow rounded-[5px] border border-gray-200"
+            data-astro-cid-yguxo3ys
+          >
+            <h3
+              class="text-2xl md:text-3xl font-semibold mb-4 text-[var(--color-primary-500)]"
+              data-astro-cid-yguxo3ys
+            >
+              Visión
+            </h3>
+            <p
+              class="text-lg md:text-xl text-[var(--color-text-700)]"
+              data-astro-cid-yguxo3ys
+            >
+              Ser el mayor proveedor de productos y soluciones eléctricas a
+              nivel nacional e internacional. Ser reconocidos por la calidad
+              humana y profesional de nuestros empleados, teniendo una
+              conciencia ecológica en todos nuestros procesos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="ubicacion" class="py-12 bg-[var(--color-background-50)]">
+      <div class="container mx-auto">
+        <h2
+          class="text-4xl font-bold mb-6 text-[var(--color-primary-500)] text-center"
+        >
+          Ubicación
+        </h2>
+        <div
+          class="bg-white shadow-lg rounded-[5px] border border-gray-200 p-8 flex flex-col md:flex-row items-center"
+        >
+          <div class="flex-1 text-center md:text-left p-4">
+            <p class="text-xl mb-8 text-[var(--color-text-900)]">
+              Av. de los Insurgentes Sur 826, Col del Valle Centro, Benito
+              Juárez, 03100 Ciudad de México, CDMX
+            </p>
+          </div>
+          <div
+            class="flex-1 p-4 transition transform duration-300 hover:scale-105 hover:shadow-2xl"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.5396619038434!2d-99.17625762413375!3d19.38907534206809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff76a40721e9%3A0x89adb2360b71d719!2sAv.%20de%20los%20Insurgentes%20Sur%20826%2C%20Col%20del%20Valle%20Centro%2C%20Benito%20Ju%C3%A1rez%2C%2003100%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1744468243427!5m2!1ses-419!2smx"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="bg-[var(--color-primary-50)] text-[var(--color-text-900)] py-6"
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-between"
+      >
+        <div class="mb-4 md:mb-0 flex items-center">
+          <img
+            src="./img/footer_logo.C0isyF2W_Z1BQwSE.webp"
+            alt="Logotipo de HGB"
+            width="2183"
+            height="2008"
+            loading="lazy"
+            decoding="async"
+            class="mr-2 h-8 w-8"
+          />
+          <p class="font-bold text-xl">Contacto</p>
+        </div>
+        <div
+          class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8"
+        >
+          <p>
+            <span class="font-semibold">Correo:</span>
+            <a href="mailto:contacto@hgbgroup.com.mx" class="hover:underline">
+              contacto@hgbgroup.com.mx
+            </a>
+          </p>
+          <p>
+            <span class="font-semibold">Teléfono:</span>
+            <a href="tel:+525554181968" class="hover:underline"> 5554181968 </a>
+          </p>
+        </div>
+      </div>
+      <div
+        class="container mx-auto mt-6 border-t border-[var(--color-secondary-200)] pt-4"
+      >
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center text-sm text-center lg:text-left"
+        >
+          <div class="mb-2 md:mb-0">
+            <p class="font-bold">Soluciones eléctricas y de iluminación</p>
+            <p class="mt-1">
+              Expertos en Equipos y proyectos Eléctricos en México y
+              Centroamérica
+            </p>
+          </div>
+          <div>
+            <p>&COPY; 2025 HGB Group. Todos los derechos reservados.</p>
+            <p class="text-xs opacity-20">
+              Desarrollado por:
+              <a
+                href="https://github.com/JoelJohs"
+                target="_blank"
+                class="hover:underline"
+                >Joel Johs</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
